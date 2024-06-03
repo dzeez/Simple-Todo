@@ -1,0 +1,28 @@
+<!DOCTYPE html> <html><head>
+        <title>Simple Todo</title>
+    <style></style></head>
+    <body>
+        <h1>Simple Todo</h1>
+        
+        <ul>
+            <li>First item</li>
+        </ul>
+        <input type="text" placeholder="Enter new item">
+    
+
+<script>
+/*__POPCODESTART__*/
+var list = document.querySelector("ul");
+var input = document.querySelector("input");
+input.addEventListener('keyup', function (e) {
+  if (e.key === 'Enter') {
+    // alert("hi");
+    // prepare new li element for appending
+    var newItem = document.createElement("li");
+    newItem.textContent = input.value; // alert(input.value);
+    // actually append the new item to the ul
+
+    list.appendChild(newItem);
+  }
+});
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbImxpc3QiLCJkb2N1bWVudCIsInF1ZXJ5U2VsZWN0b3IiLCJpbnB1dCIsImFkZEV2ZW50TGlzdGVuZXIiLCJlIiwia2V5IiwibmV3SXRlbSIsImNyZWF0ZUVsZW1lbnQiLCJ0ZXh0Q29udGVudCIsInZhbHVlIiwiYXBwZW5kQ2hpbGQiXSwibWFwcGluZ3MiOiJBQUFBLElBQUlBLElBQUksR0FBR0MsUUFBUSxDQUFDQyxhQUFULENBQXVCLElBQXZCLENBQVg7QUFDQSxJQUFJQyxLQUFLLEdBQUdGLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixPQUF2QixDQUFaO0FBRUFDLEtBQUssQ0FBQ0MsZ0JBQU4sQ0FBdUIsT0FBdkIsRUFBZ0MsVUFBU0MsQ0FBVCxFQUFhO0FBQ3pDLE1BQUdBLENBQUMsQ0FBQ0MsR0FBRixLQUFVLE9BQWIsRUFBc0I7QUFDbEI7QUFFTjtBQUNNLFFBQUlDLE9BQU8sR0FBR04sUUFBUSxDQUFDTyxhQUFULENBQXVCLElBQXZCLENBQWQ7QUFDQUQsSUFBQUEsT0FBTyxDQUFDRSxXQUFSLEdBQXNCTixLQUFLLENBQUNPLEtBQTVCLENBTGtCLENBTWxCO0FBRUE7O0FBQ0FWLElBQUFBLElBQUksQ0FBQ1csV0FBTCxDQUFpQkosT0FBakI7QUFDSDtBQUNKLENBWkQiLCJzb3VyY2VzQ29udGVudCI6WyJsZXQgbGlzdCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCJ1bFwiKTtcbmxldCBpbnB1dCA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCJpbnB1dFwiKTtcblxuaW5wdXQuYWRkRXZlbnRMaXN0ZW5lcigna2V5dXAnLCBmdW5jdGlvbihlKSAge1xuICAgIGlmKGUua2V5ID09PSAnRW50ZXInKSB7XG4gICAgICAgIC8vIGFsZXJ0KFwiaGlcIik7XG4gICAgICAgIFxuXHRcdC8vIHByZXBhcmUgbmV3IGxpIGVsZW1lbnQgZm9yIGFwcGVuZGluZ1xuICAgICAgICBsZXQgbmV3SXRlbSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoXCJsaVwiKTtcbiAgICAgICAgbmV3SXRlbS50ZXh0Q29udGVudCA9IGlucHV0LnZhbHVlO1xuICAgICAgICAvLyBhbGVydChpbnB1dC52YWx1ZSk7XG4gICAgICAgIFxuICAgICAgICAvLyBhY3R1YWxseSBhcHBlbmQgdGhlIG5ldyBpdGVtIHRvIHRoZSB1bFxuICAgICAgICBsaXN0LmFwcGVuZENoaWxkKG5ld0l0ZW0pO1xuICAgIH1cbn0pOyJdfQ==</script></body></html>
